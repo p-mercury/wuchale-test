@@ -1,0 +1,29 @@
+{
+	"name": "@wuchale-test/site",
+	"private": true,
+	"type": "module",
+	"main": "./dist/cdk/index.js",
+	"types": "./dist/cdk/index.d.ts",
+	"scripts": {
+		"build": "vite build",
+		"build-native": "PUBLIC_NATIVE=true vite build",
+		"lint": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"lint:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"start": "vite dev --force"
+	},
+	"dependencies": {
+		"@flit/sveltekit-adapter-cdk": "^2.1.1",
+		"@sveltejs/kit": "^2.55.0",
+		"@sveltejs/vite-plugin-svelte": "^7.0.0",
+		"@wuchale-test/library": "*",
+		"@wuchale/svelte": "^0.19.3",
+		"sass": "^1.98.0",
+		"svelte": "^5.55.0",
+		"svelte-check": "^4.4.5",
+		"typescript": "^6.0.2",
+		"vite": "^8.0.3",
+		"vitest": "^4.1.2",
+		"wuchale": "^0.22.3",
+		"zod": "^4.3.6"
+	}
+}

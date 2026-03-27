@@ -1,20 +1,13 @@
 import { sveltekit } from "@sveltejs/kit/vite";
-import basicSsl from "@vitejs/plugin-basic-ssl";
 import { defineConfig } from "vitest/config";
-import { wuchale } from "wuchale";
+import { wuchale } from "wuchale/vite";
 
 export default defineConfig({
 	clearScreen: false,
-	plugins: [
-		wuchale(),
-		sveltekit(),
-		basicSsl({
-			certDir: "dist",
-		}),
-	],
+	plugins: [wuchale(), sveltekit()],
 	server: {
 		strictPort: true,
 		host: false,
-		port: 5173,
+		port: 5178,
 	},
 });
