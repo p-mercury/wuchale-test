@@ -7,25 +7,20 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../library/dist/lib/enum/user-status.js
-msgid "Deleted"
-msgstr "Deleted"
+#~ msgid "Deleted"
+#~ msgstr "Deleted"
 
-#: ../library/dist/lib/enum/user-status.js
-msgid "Invited"
-msgstr "Invited"
+#~ msgid "Invited"
+#~ msgstr "Invited"
 
-#: ../library/dist/lib/enum/user-status.js
-msgid "Active"
-msgstr "Active"
+#~ msgid "Active"
+#~ msgstr "Active"
 
-#: ../library/dist/lib/enum/user-status.js
-msgid "Deactivated"
-msgstr "Deactivated"
+#~ msgid "Deactivated"
+#~ msgstr "Deactivated"
 
-#: ../library/dist/lib/enum/user-status.js
-msgid "Unknown"
-msgstr "Unknown"
+#~ msgid "Unknown"
+#~ msgstr "Unknown"
 
 #: src/routes/+page.svelte
 msgid "Hello world"
