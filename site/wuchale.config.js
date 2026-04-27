@@ -1,13 +1,6 @@
 import { defineConfig } from "wuchale";
 import { adapter as svelteAdapter } from "@wuchale/svelte";
 import { adapter as jsAdapter } from "wuchale/adapter-vanilla";
-import path from "node:path";
-import { createRequire } from "node:module";
-
-const require = createRequire(import.meta.url);
-const uiWebRoot = path.dirname(
-	require.resolve("@wuchale-test/library/package.json"),
-);
 
 export default defineConfig({
 	locales: ["en", "de"],
@@ -22,11 +15,11 @@ export default defineConfig({
 		}),
 		libSvelte: svelteAdapter({
 			loader: "sveltekit",
-			files: path.join(uiWebRoot, "dist/**/*.svelte"),
+			files: "../library/dist/**/*.svelte",
 		}),
 		libJs: jsAdapter({
 			loader: "vite",
-			files: path.join(uiWebRoot, "dist/**/*.{js,ts}"),
+			files: "../library/dist/**/*.js",
 		}),
 	},
 });
