@@ -1,12 +1,14 @@
 
-            import * as _w_c_svelte_0_ from './svelte.svelte.en.compiled.js'
-import * as _w_c_svelte_1_ from './svelte.svelte.de.compiled.js'
+            import * as _w_c_0_0_ from './svelte.0.en.compiled.js'
+import * as _w_c_0_1_ from './svelte.0.de.compiled.js'
+import * as _w_c_0_2_ from './svelte.0.bg.compiled.js'
             /** @typedef {import("wuchale/runtime").CatalogModule} CatalogMod */
-            /** @typedef {{[locale: string]: CatalogMod}} KeyCatalogs */
-            /** @type {{[loadID: string]: KeyCatalogs}} */
-            const catalogs = {svelte: {en: _w_c_svelte_0_,de: _w_c_svelte_1_}}
-            export const loadCatalog = (/** @type {string} */ loadID, /** @type {string} */ locale) => {
-                return /** @type {CatalogMod} */ (/** @type {KeyCatalogs} */ (catalogs[loadID])[locale])
+            /** @type {{[locale: string]: CatalogMod[]}} */
+            const catalogs = {en: [_w_c_0_0_],de: [_w_c_0_1_],bg: [_w_c_0_2_]}
+            export const loadCatalog = (/** @type {number} */ loadID, /** @type {string} */ locale) => {
+                return /** @type {CatalogMod} */ (/** @type {CatalogMod[]} */ (catalogs[locale])[loadID])
             }
-            export const loadIDs = ['svelte']
+            export const loadCount = 1
+            // not essential. in case it is needed and for debugging
+            export const patterns = ["svelte"]
         

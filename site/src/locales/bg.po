@@ -2,19 +2,19 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
 "Source-Language: en\n"
-"Language: en\n"
+"Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #~ msgid "<0/>Hello world"
-#~ msgstr "<0/>Hello world"
+#~ msgstr ""
 
 #. 0: getUserStatusName(1)
 #: src/routes/+page.svelte
 msgid "User status: {0}"
-msgstr "User status: {0}"
+msgstr ""
 
 #: src/routes/+page.svelte
 msgid "<0/> Hello world"
-msgstr "<0/> Hello world"
+msgstr ""

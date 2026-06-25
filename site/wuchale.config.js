@@ -3,7 +3,7 @@ import { adapter as svelteAdapter } from "@wuchale/svelte";
 import { adapter as jsAdapter } from "wuchale/adapter-vanilla";
 
 export default defineConfig({
-	locales: ["en", "de"],
+	locales: ["en", "de", "bg"],
 	adapters: {
 		svelte: svelteAdapter({ loader: "sveltekit" }),
 		js: jsAdapter({
@@ -15,11 +15,11 @@ export default defineConfig({
 		}),
 		libSvelte: svelteAdapter({
 			loader: "sveltekit",
-			files: "../library/dist/**/*.svelte",
+			files: "../../packages/ui-web/dist/**/*.svelte",
 		}),
 		libJs: jsAdapter({
 			loader: "vite",
-			files: "../library/dist/**/*.js",
+			files: "../../packages/ui-web/dist/**/*.js",
 		}),
 	},
 });

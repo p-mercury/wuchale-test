@@ -1,11 +1,12 @@
 
             
             /** @typedef {() => Promise<import("wuchale/runtime").CatalogModule>} CatalogMod */
-            /** @typedef {{[locale: string]: CatalogMod}} KeyCatalogs */
-            /** @type {{[loadID: string]: KeyCatalogs}} */
-            const catalogs = {js: {en: () => import('./svelte.svelte.en.compiled.js'),de: () => import('./svelte.svelte.de.compiled.js')}}
-            export const loadCatalog = (/** @type {string} */ loadID, /** @type {string} */ locale) => {
-                return /** @type {CatalogMod} */ (/** @type {KeyCatalogs} */ (catalogs[loadID])[locale])()
+            /** @type {{[locale: string]: CatalogMod[]}} */
+            const catalogs = {en: [() => import('./svelte.0.en.compiled.js')],de: [() => import('./svelte.0.de.compiled.js')],bg: [() => import('./svelte.0.bg.compiled.js')]}
+            export const loadCatalog = (/** @type {number} */ loadID, /** @type {string} */ locale) => {
+                return /** @type {CatalogMod} */ (/** @type {CatalogMod[]} */ (catalogs[locale])[loadID])()
             }
-            export const loadIDs = ['js']
+            export const loadCount = 1
+            // not essential. in case it is needed and for debugging
+            export const patterns = ["js"]
         

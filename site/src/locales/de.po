@@ -7,26 +7,14 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#~ msgid "Deleted"
-#~ msgstr "Gelöscht"
-
-#~ msgid "Invited"
-#~ msgstr "Eingeladen"
-
-#~ msgid "Active"
-#~ msgstr "Aktiv"
-
-#~ msgid "Deactivated"
-#~ msgstr "Deaktiviert"
-
-#~ msgid "Unknown"
-#~ msgstr "Unbekannt"
-
-#: src/routes/+page.svelte
-msgid "Hello world"
-msgstr "Hallo Welt"
+#~ msgid "<0/>Hello world"
+#~ msgstr ""
 
 #. 0: getUserStatusName(1)
 #: src/routes/+page.svelte
 msgid "User status: {0}"
-msgstr "Benutzerstatus: {0}"
+msgstr ""
+
+#: src/routes/+page.svelte
+msgid "<0/> Hello world"
+msgstr ""

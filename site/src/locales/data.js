@@ -1,3 +1,3 @@
-/** @typedef {('en'|'de')} Locale */
-/** @type {Locale[]} */
-export const locales = ['en','de']
+/** @typedef {('en'|'de'|'bg')} Locale */
+/** @type {[Locale, ...Locale[]]} */
+export const locales = ['en','de','bg']
