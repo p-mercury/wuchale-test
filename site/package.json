@@ -12,18 +12,18 @@
 		"start": "vite dev --force"
 	},
 	"dependencies": {
-		"@flit/sveltekit-adapter-cdk": "^2.2.1",
+		"@flit/sveltekit-adapter-cdk": "^2.3.0",
 		"@sveltejs/kit": "^2.68.0",
 		"@sveltejs/vite-plugin-svelte": "^7.1.2",
 		"@wuchale-test/library": "*",
-		"@wuchale/svelte": "^0.20.1",
+		"@wuchale/svelte": "^0.20.2",
 		"sass": "^1.101.0",
 		"svelte": "^5.56.4",
 		"svelte-check": "^4.7.1",
 		"typescript": "^6.0.3",
 		"vite": "^8.1.0",
 		"vitest": "^4.1.9",
-		"wuchale": "^0.25.0",
+		"wuchale": "^0.25.3",
 		"zod": "^4.4.3"
 	}
 }

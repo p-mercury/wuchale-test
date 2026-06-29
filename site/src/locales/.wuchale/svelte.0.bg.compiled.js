@@ -1,6 +1,6 @@
 
                 /** @type import('wuchale').CompiledElement[] */
-export let c = [[[0],"Hello world"],["User status: ",0],[[0]," Hello world"]]
+export let c = ["Text","Number","File",[[0],"Checkbox"]]
                 // only during dev, for HMR
                 let latestVersion = -1
                 // @ts-ignore

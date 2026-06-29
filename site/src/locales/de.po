@@ -7,14 +7,18 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#~ msgid "<0/>Hello world"
-#~ msgstr ""
-
-#. 0: getUserStatusName(1)
-#: src/routes/+page.svelte
-msgid "User status: {0}"
+#: src/routes/test-item.svelte
+msgid "Text"
 msgstr ""
 
-#: src/routes/+page.svelte
-msgid "<0/> Hello world"
+#: src/routes/test-item.svelte
+msgid "Number"
+msgstr ""
+
+#: src/routes/test-item.svelte
+msgid "File"
+msgstr ""
+
+#: src/routes/test-item.svelte
+msgid "<0/>Checkbox"
 msgstr ""
